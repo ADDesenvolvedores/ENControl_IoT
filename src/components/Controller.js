@@ -21,7 +21,7 @@ export default {
         :class="[status ? 'bg-green' : 'bg-red']"
     >
         <input
-        class="w-90 bw-0 bg-transparent bt-0 br-0 bl-0 b--light-blue"
+        class="w-90 bw-0 bg-transparent bt-0 br-0 bl-0 b--color-ino"
         placeholder="Type here"
         v-model.trim="$store.state.controllers[index].id"
         />

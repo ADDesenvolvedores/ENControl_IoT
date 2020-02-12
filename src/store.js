@@ -26,6 +26,26 @@ export default new Vuex.Store({
       {
         id: "Strawberry",
         status: true
+      },
+      {
+        id: "Watermelon",
+        status: true
+      },
+      {
+        id: "Freezer",
+        status: false
+      },
+      {
+        id: "Microwave",
+        status: true
+      },
+      {
+        id: "Anything",
+        status: true
+      },
+      {
+        id: "Door",
+        status: true
       }
     ],
     searchInput: ""
