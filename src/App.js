@@ -13,7 +13,7 @@ export default {
     }
   },
   template: `
-    <div id="app" class="bg-washed-yellow">
+    <div id="app">
         <header class="z-9999 bg-color-ino shadow-3 flex flex-wrap">
             <h1 class="sans-serif dib f2 b w-90 pl3 near-white">
             Arduino Electrical Network Controller
