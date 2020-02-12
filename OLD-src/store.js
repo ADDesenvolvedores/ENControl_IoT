@@ -1,3 +1,8 @@
+import Vue from "vue";
+import Vuex from "vuex";
+
+Vue.use(Vuex);
+
 export default new Vuex.Store({
   state: {
     bt_group_hover_state: false,
@@ -32,9 +37,9 @@ export default new Vuex.Store({
   },
   getters: {
     filteredControllers: state => {
-      const objects = state.controllers
-      let filtered_objects = objects
-      return filtered_objects
+      const objects = state.controllers;
+      let filtered_objects = objects;
+      return filtered_objects;
       // return state.controllers.filter(obj =>
       //   obj.id.includes(state.searchInput)
       // );
@@ -42,17 +47,17 @@ export default new Vuex.Store({
   },
   mutations: {
     controllerSwitch(state, index) {
-      state.controllers[index].status = !state.controllers[index].status
+      state.controllers[index].status = !state.controllers[index].status;
     },
     btShow(state) {
-      state.bt_group_hover_state = true
+      state.bt_group_hover_state = true;
     },
     btHide(state) {
-      state.bt_group_hover_state = false
+      state.bt_group_hover_state = false;
     },
     increment(state) {
-      state.count *= 2
+      state.count *= 2;
     }
   },
   actions: {}
-})
+});
